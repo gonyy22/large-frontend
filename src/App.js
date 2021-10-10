@@ -1,9 +1,11 @@
+import { Route } from "react-router";
+import PostList from "./pages/PostList";
+import './App.css';
+
 function App() {
   return (
     <div className="App">
-      {/* <Router path="/" />
-      <Router path="/post" />
-      <Router path="profile" /> */}
+      <Route exact path="/" component={PostList} />
     </div>
   );
 }
