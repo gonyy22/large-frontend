@@ -1,5 +1,9 @@
 .headers {
-  height: 64px;
+  height: 38px;
   width: 100%;
   background-color: red;
+  padding:13px 24px;
 }
+.header_info { float:right; }
+.headers::after { display:block; clear:both; }
+.write_btn {  }
