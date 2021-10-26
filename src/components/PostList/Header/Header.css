@@ -23,18 +23,6 @@
   height: 25px;
   vertical-align: middle;
 }
-#search {
-  width: 0;
-  margin-left: 10px;
-  border: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  transition: all 0.5s;
-}
-#search:focus {
-  outline: none;
-}
 .logo_img {
   display: inline-block;
   margin-top: 7px;
