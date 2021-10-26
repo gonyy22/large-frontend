@@ -21,6 +21,12 @@ function Headers() {
   function handleSearch() {
     setSearchValue((prevSearchValue) => !prevSearchValue);
   }
+  function onEnterSearch(e) {
+    if (e.key === 'Enter') {
+      alert('Press Enter!');
+      e.target.value = '';
+    }
+  }
 
   return (
     <nav className="header">
@@ -37,6 +43,7 @@ function Headers() {
               name="search"
               placeholder="Search posts"
               isOpen={searchValue}
+              onKeyPress={onEnterSearch}
             />
           </div>
           <div className="write_profile_wrap">

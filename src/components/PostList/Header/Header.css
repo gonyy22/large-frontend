@@ -36,10 +36,11 @@
 }
 .write_btn {
   display: inline-block;
-  margin-left: 25px;
-  padding: 10px 30px;
+  margin: 0 0 3px 25px;
+  padding: 9px 14px;
   color: #3c3c3c;
-  border: 2px solid #3c3c3c;
+  font-size: 14px;
+  border: 1px solid #3c3c3c;
   border-radius: 30px;
   transition: all 0.3s;
 }
