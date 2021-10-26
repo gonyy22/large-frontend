@@ -6,15 +6,20 @@ function Headers() {
 
   function handleSearch() {
     setSearchValue((prevSearchValue) => !prevSearchValue);
+    if (searchValue === true) {
+      document.getElementById('search').style.width = '160px';
+    } else if (searchValue === false) {
+      document.getElementById('search').style.width = '0';
+    }
   }
 
   return (
     <nav className="header">
       <div className="inner_header">
-        <img a src="img/logo.svg" className="logo_img" alt="" />
+        <img src="img/logo.svg" className="logo_img" alt="" />
         <div className="header_info">
           <div className="search_wrap">
-            <button type="button" handleSearch={handleSearch}>
+            <button type="button" onClick={handleSearch}>
               <img src="img/search.png" alt="" />
             </button>
             <input

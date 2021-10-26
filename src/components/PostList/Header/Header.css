@@ -24,11 +24,13 @@
   vertical-align: middle;
 }
 #search {
+  width: 0;
   margin-left: 10px;
   border: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: all 0.5s;
 }
 #search:focus {
   outline: none;
@@ -51,6 +53,11 @@
   color: #3c3c3c;
   border: 2px solid #3c3c3c;
   border-radius: 30px;
+  transition: all 0.3s;
+}
+.write_btn:hover {
+  background-color: #3c3c3c;
+  color: #fff;
 }
 .profile {
   width: 20px;
