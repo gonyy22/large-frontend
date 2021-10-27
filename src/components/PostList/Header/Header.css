@@ -1,31 +1,20 @@
 .header {
   height: 38px;
   background-color: #fff;
-  padding: 13px 0;
-}
-.inner_header {
-  width: 1100px;
-  margin: 0 auto;
-}
-.header_info {
-  float: right;
-}
-.headers::after {
-  display: block;
-  clear: both;
 }
 .search_wrap {
   display: inline-block;
-  line-height: 35px;
+  line-height: 36px;
+}
+.search_wrap img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
 }
 .header_info img {
   width: 25px;
   height: 25px;
   vertical-align: middle;
-}
-.logo_img {
-  display: inline-block;
-  margin-top: 7px;
 }
 .write_profile_wrap {
   float: right;
@@ -48,6 +37,9 @@
   background-color: #3c3c3c;
   color: #fff;
 }
+.write_profile_wrap {
+  margin-top: 0;
+}
 .profile {
   width: 20px;
   height: 20px;
@@ -58,5 +50,6 @@
   background-color: darkolivegreen;
   border-radius: 50%;
   text-align: center;
+  line-height: 20px;
   vertical-align: bottom;
 }

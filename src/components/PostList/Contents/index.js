@@ -1,5 +1,5 @@
-import Posts from "./Posts";
-import Topics from "./Topics";
+import Posts from './Posts';
+import Topics from './Topics';
 import './Contents.css';
 
 function Contents() {
