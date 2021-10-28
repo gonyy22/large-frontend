@@ -1,5 +1,29 @@
-.Topics_wrap{
-  height:74px;
-  margin:24px 0;
-  background-color: blueviolet;
+.topics_title {
+  margin: 28px 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #aaa;
+}
+.topics_wrap {
+  height: 60px;
+  margin: 24px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+.topics_wrap::-webkit-scrollbar {
+  width: 3px;
+  height: 4px;
+}
+.topics_wrap::-webkit-scrollbar-thumb {
+  background-color: #828282;
+  border-radius: 10px;
+}
+.topics_wrap::-webkit-scrollbar-track {
+  background-color: #dcdcdc;
+  border-radius: 10px;
+}
+
+/* 잡아야 할 부분 */
+.topic_wrap {
+  width: 1500px;
 }

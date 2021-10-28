@@ -1,7 +1,13 @@
-import './Topics.css';
+import './Topic.css';
 
-function Topics() {
-  return <div className="Topics_wrap">Topics</div>;
+function Topic() {
+  return (
+    <>
+      <button type="button" className="topic_btn">
+        Front-end
+      </button>
+    </>
+  );
 }
 
-export default Topics;
+export default Topic;
