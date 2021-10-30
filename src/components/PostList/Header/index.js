@@ -21,18 +21,12 @@ const SearchInput = styled.input`
 
 const InnerHeader = styled.div`
   position: relative;
-  width: 1000px;
+  width: 90%;
   height: 64px;
   margin: 0 auto;
 
-  @media only screen and (min-width: 0) and (max-width: 480px) {
-    width: 300px;
-  }
-  @media only screen and (min-width: 481px) and (max-width: 768px) {
-    width: 500px;
-  }
-  @media only screen and (min-width: 769px) and (max-width: 1023px) {
-    width: 600px;
+  @media only screen and (min-width: 1024px) {
+    width: 1000px;
   }
 `;
 

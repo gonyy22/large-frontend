@@ -1,7 +1,7 @@
 .header {
   height: 64px;
   background-color: #fff;
-  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .search_wrap {
   display: inline-block;
