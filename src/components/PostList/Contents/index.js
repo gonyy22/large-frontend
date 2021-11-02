@@ -22,6 +22,14 @@ function Contents() {
   return (
     <ContentsWrap>
       <Topics />
+      <div className="latest_following_tap">
+        <button type="button" className="latest_btn">
+          최신 글
+        </button>
+        <button type="button" className="following_btn">
+          팔로잉
+        </button>
+      </div>
       <Posts />
     </ContentsWrap>
   );
