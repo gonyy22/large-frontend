@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import styled from 'styled-components';
 import Posts from './Posts';
 import Topics from './Topics';
@@ -18,17 +19,66 @@ const ContentsWrap = styled.div`
   }
 `;
 
+const TabButton = styled.button`
+  position: relative;
+  height: 30px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #aaa;
+  :hover {
+    color: #3d3d3d;
+  }
+  :hover::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #3d3d3d;
+  }
+  ${(props) =>
+    props.selected
+      ? `
+    color: #3d3d3d;
+    ::after {
+    content: '';
+    width: 100%;
+    height: 1px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: #3d3d3d;
+    }
+  `
+      : ''}
+`;
+
 function Contents() {
+  const [isLatestSelected, setIsLatestSelected] = useState(true);
+
+  function handleClick(val) {
+    setIsLatestSelected(val);
+  }
   return (
     <ContentsWrap>
       <Topics />
       <div className="latest_following_tap">
-        <button type="button" className="latest_btn">
+        <TabButton
+          selected={isLatestSelected}
+          onClick={() => handleClick(true)}
+        >
           최신 글
-        </button>
-        <button type="button" className="following_btn">
+        </TabButton>
+        <TabButton
+          selected={!isLatestSelected}
+          onClick={() => handleClick(false)}
+        >
           팔로잉
-        </button>
+        </TabButton>
       </div>
       <Posts />
     </ContentsWrap>
