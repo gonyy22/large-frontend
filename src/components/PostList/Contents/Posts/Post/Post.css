@@ -1,8 +1,13 @@
 .post_wrap {
   margin-top: 40px;
+  position: relative;
 }
 .post_info {
   display: inline-block;
+  width: 100%;
+}
+.writer_wrap {
+  display: block;
 }
 .writer_profile {
   display: inline-block;
@@ -22,10 +27,9 @@
   vertical-align: middle;
   margin-left: 4px;
 }
-.post_title {
-  margin: 10px 0;
-  font-size: 20px;
-  font-weight: 600;
+.post_title_wrap {
+  width: 70%;
+  display: inline-block;
 }
 .post_tag {
   display: inline-block;
@@ -49,11 +53,9 @@
   margin: 4px 8px;
 }
 .post_img {
-  display: inline-block;
-  float: right;
-}
-.post_wrap::after {
-  display: block;
-  content: '';
-  clear: both;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20%;
 }

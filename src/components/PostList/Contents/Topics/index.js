@@ -10,13 +10,14 @@ function Topics() {
     { name: 'AI' },
   ];
 
-  console.log(topics);
   return (
     <>
       <p className="topics_title">내가 선택한 토픽</p>
       <div className="topics_wrap">
         <div className="topic_wrap">
-          <Topic />
+          {topics.map((row) => (
+            <Topic {...row} />
+          ))}
         </div>
       </div>
     </>
