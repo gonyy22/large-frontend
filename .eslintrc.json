@@ -29,6 +29,8 @@
         "brace-style": "error",
         "comma-dangle": "error",
         "comma-spacing": "error",
-        "eol-last": "error"
+        "eol-last": "error",
+        "react/jsx-props-no-spreading": "off",
+        "react/prop-types": "off"
     }
 }

@@ -17,23 +17,24 @@ const PostTitle = styled.div`
   }
 `;
 function Post(props) {
+  const { post } = props;
   return (
     <>
       <div className="post_wrap">
         <div className="post_info">
           <div className="writer_wrap">
             <div className="writer_profile">j</div>
-            <p className="writer">{props.author}</p>
+            <p className="writer">{post.author}</p>
           </div>
           <div className="post_title_wrap">
-            <PostTitle>{props.title}</PostTitle>
+            <PostTitle>{post.title}</PostTitle>
           </div>
           <div className="post_tag_wrap">
-            <div className="post_tag">{props.tag}</div>
-            <p className="post_date">{props.createdAt}</p>
+            <div className="post_tag">{post.tag}</div>
+            <p className="post_date">{post.createdAt}</p>
           </div>
           <img
-            src={props.profileImageSrc}
+            src={post.user.logoImageSrc}
             className="post_img"
             alt="포스트 이미지"
           />
