@@ -1,10 +1,10 @@
 import './Topic.css';
 
-function Topic() {
+function Topic(props) {
   return (
     <>
       <button type="button" className="topic_btn">
-        Front-end
+        {props.name}
       </button>
     </>
   );
