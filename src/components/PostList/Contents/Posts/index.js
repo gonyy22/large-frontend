@@ -2,7 +2,7 @@ import './Posts.css';
 import Post from './Post';
 
 function Posts() {
-  const postData = [
+  const posts = [
     {
       profileImageSrc: 'img/post_img_sample.png',
       author: '욱구',
@@ -48,8 +48,8 @@ function Posts() {
   ];
   return (
     <div className="posts_wrap">
-      {postData.map((row) => (
-        <Post {...row} />
+      {posts.map((post) => (
+        <Post post={post} />
       ))}
       {/* <Post postData={postData} /> */}
     </div>
