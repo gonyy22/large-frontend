@@ -34,7 +34,7 @@ function Post(props) {
             <p className="post_date">{post.createdAt}</p>
           </div>
           <img
-            src={post.profileImageSrc}
+            src={post.user.logoImageSrc}
             className="post_img"
             alt="포스트 이미지"
           />
