@@ -1,14 +1,15 @@
+import api from '../../../../utils/api';
+import { useState, useEffect } from 'react';
 import './Topics.css';
 import Topic from './Topic/index';
 
 function Topics() {
-  const topics = [
-    { name: 'front end', logo: 'abc' },
-    { name: 'back end' },
-    { name: 'database' },
-    { name: 'devops' },
-    { name: 'AI' },
-  ];
+  const [topics, setTopics] = useState([]);
+
+  useEffect(async () => {
+    const response = await api.get('/tags');
+    setTopics(response.data);
+  }, []);
 
   return (
     <>
@@ -16,7 +17,7 @@ function Topics() {
       <div className="topics_wrap">
         <div className="topic_wrap">
           {topics.map((topic) => (
-            <Topic name={topic.name} />
+            <Topic name={topic.name}/>
           ))}
         </div>
       </div>

@@ -24,13 +24,13 @@ function Post(props) {
         <div className="post_info">
           <div className="writer_wrap">
             <div className="writer_profile">j</div>
-            <p className="writer">{post.author}</p>
+            <p className="writer">{post.user.name}</p>
           </div>
           <div className="post_title_wrap">
             <PostTitle>{post.title}</PostTitle>
           </div>
           <div className="post_tag_wrap">
-            <div className="post_tag">{post.tag}</div>
+            <div className="post_tag">{post.tag.name}</div>
             <p className="post_date">{post.createdAt}</p>
           </div>
           <img
