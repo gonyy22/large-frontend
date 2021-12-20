@@ -5,6 +5,7 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+      nyanya
       <Route exact path="/" component={PostList} />
     </div>
   );
